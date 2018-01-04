@@ -10,10 +10,12 @@
 # It's still possible to build, tag and push images manually. Just use:
 #	make release-all
 
-IMAGE_NAME := fluent/fluentd-kubernetes
+IMAGE_NAME := fluent/fluentd
 ALL_IMAGES := \
 	v0.12/alpine-elasticsearch:v0.12.33-elasticsearch,v0.12-elasticsearch,stable-elasticsearch,elasticsearch \
-	v0.12/debian-elasticsearch:v0.12.33-debian-elasticsearch,v0.12-debian-elasticsearch,debian-elasticsearch
+	v0.12/debian-elasticsearch:v0.12.33-debian-elasticsearch,v0.12-debian-elasticsearch,debian-elasticsearch \
+	v1.0/alpine-elasticsearch:v1.0.2-elasticsearch,v1.0.2-elasticsearch,stable-elasticsearch,elasticsearch \
+	v1.0/debian-elasticsearch:v1.0.2-debian-elasticsearch,v1.0.2-debian-elasticsearch,debian-elasticsearch
 
 #	<Dockerfile>:<version>,<tag1>,<tag2>,...
 
