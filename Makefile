@@ -16,6 +16,7 @@ ALL_IMAGES := \
 	v0.12/debian-elasticsearch:v0.12.33-debian-elasticsearch,v0.12-debian-elasticsearch,debian-elasticsearch \
 	v1.0/alpine-elasticsearch:v1.0.2-elasticsearch,v1.0.2-elasticsearch,stable-elasticsearch,elasticsearch \
 	v1.0/debian-elasticsearch:v1.0.2-debian-elasticsearch,v1.0.2-debian-elasticsearch,debian-elasticsearch
+	#some thing new for new version
 
 #	<Dockerfile>:<version>,<tag1>,<tag2>,...
 
