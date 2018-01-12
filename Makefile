@@ -10,7 +10,7 @@
 # It's still possible to build, tag and push images manually. Just use:
 #	make release-all
 
-IMAGE_NAME := fluent/fluentd
+IMAGE_NAME := piran/fluent-elasticsearch
 ALL_IMAGES := \
 	v0.12/alpine-elasticsearch:v0.12.33-elasticsearch,v0.12-elasticsearch,stable-elasticsearch,elasticsearch \
 	v0.12/debian-elasticsearch:v0.12.33-debian-elasticsearch,v0.12-debian-elasticsearch,debian-elasticsearch \
