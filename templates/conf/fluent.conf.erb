@@ -60,7 +60,7 @@
   @type google_cloud
 
   # Set the buffer @type to file to improve the reliability and reduce the memory consumption
-  buffer_@type file
+  buffer_type file
   buffer_path /var/log/fluentd-buffers/stackdriver.buffer
   # Set queue_full action to block because we want to pause gracefully
   # in case of the off-the-limits load instead of throwing an exception
