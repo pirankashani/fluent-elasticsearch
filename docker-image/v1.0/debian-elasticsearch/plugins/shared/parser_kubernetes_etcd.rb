@@ -38,11 +38,11 @@
 #
 # ----   EOF       ---
 
-require 'fluent/parser'
+require 'fluent/plugin/parser'
 
 module Fluent
   class KubernetesParseretcd < Fluent::TextParser::MultilineParser
-    Fluent::Plugin.register_parser("kubernetes_etcd", self)
+    Plugin.register_parser("kubernetes_etcd", self)
 
     #CONF_FORMAT_FIRSTLINE = %q{/^\w\d{4}/}
     CONF_FORMAT_FIRSTLINE = %q{/^\d[^\s]*\s[^\s]*/}
