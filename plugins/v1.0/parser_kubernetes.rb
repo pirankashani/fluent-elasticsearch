@@ -45,11 +45,11 @@
 #
 # ----   EOF       ---
 
-require 'fluent/parser'
+require 'fluent/plugin/parser'
 
-module Fluent
+module Fluent::Plugin
   class KubernetesParser < Fluent::TextParser::MultilineParser
-    Fluent::Plugin.register_parser("kubernetes", self)
+    Plugin.register_parser("kubernetes", self)
 
     CONF_FORMAT_FIRSTLINE = %q{/^\w\d{4}/}
     CONF_FORMAT1 = %q{/^(?<severity>\w)(?<time>\d{4} [^\s]*)\s+(?<pid>\d+)\s+(?<source>[^ \]]+)\] (?<message>.*)/}
