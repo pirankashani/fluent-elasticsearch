@@ -180,6 +180,9 @@ plugins:
 	mkdir -p docker-image/$(DOCKERFILE)/plugins
 	cp -R plugins/$(FLUENTD_VERSION)/shared/ docker-image/$(DOCKERFILE)/plugins/
 	cp -R plugins/$(FLUENTD_VERSION)/$(TARGET)/ docker-image/$(DOCKERFILE)/plugins/
+	mkdir -p docker-image/$(DOCKERFILE)/plugins/parser
+	cp -R plugins/$(FLUENTD_VERSION)/$(TARGET)/parser docker-image/$(DOCKERFILE)/plugins/parser
+
 
 # Create `post_push` Docker Hub hook.
 #
